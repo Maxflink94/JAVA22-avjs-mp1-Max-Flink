@@ -38,7 +38,7 @@ function displayHighscoreList(sortedArray, div){
 
     sortedArray.forEach(players =>{
         const highscoreh2 = document.createElement('h2');
-        highscoreh2.innerText = sortedArray[players].name + '  ' + sortedArray[players].score;
+        highscoreh2.innerText = players.name + '  ' + players.score;
         div.append(highscoreh2);
     });
 }
