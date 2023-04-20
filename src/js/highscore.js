@@ -40,7 +40,7 @@ function displayHighscoreList(sortedArray, div){
         const highscoreh2 = document.createElement('h2');
         highscoreh2.innerText = sortedArray[players].name + '  ' + sortedArray[players].score;
         div.append(highscoreh2);
-    })
+    });
 }
 
 // Uppdaterar (med PATCH/PUT/POST) highscore på firebase
