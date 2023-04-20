@@ -1,0 +1,33 @@
+body {
+  background-color: linen;
+}
+
+#mainContainer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  display: flex;
+}
+
+.gameDiv, .winnerDiv {
+  display: none;
+}
+
+.resultDiv {
+  width: 350px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.choiceBtnDiv {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.choiceBtn {
+  width: 100px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=index.c92073ef.css.map */
