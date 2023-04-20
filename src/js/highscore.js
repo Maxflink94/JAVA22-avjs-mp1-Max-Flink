@@ -28,13 +28,19 @@ function sortHighscoreList(highscoreList){
 // Printar ut highscorelistan (UTAN CSS)
 function displayHighscoreList(sortedArray, div){
 
-    for ( players in sortedArray ){
+    // for ( players in sortedArray ){
 
+    //     const highscoreh2 = document.createElement('h2');
+    //     highscoreh2.innerText = sortedArray[players].name + '  ' + sortedArray[players].score;
+    //     div.append(highscoreh2);
+        
+    // }
+
+    sortedArray.forEach(players =>{
         const highscoreh2 = document.createElement('h2');
         highscoreh2.innerText = sortedArray[players].name + '  ' + sortedArray[players].score;
         div.append(highscoreh2);
-        
-    }
+    })
 }
 
 // Uppdaterar (med PATCH/PUT/POST) highscore på firebase
